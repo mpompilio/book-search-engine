@@ -38,6 +38,15 @@ type Mutation {
     saveBook(book: SavedBookInput): User
     removeBook(bookId: String!): User
 }
+
+input SavedBookInput {
+  authors: [String]
+  description: String
+  bookId: String
+  image: String
+  link: String
+  title: String
+}
 `;
 
 // export the typeDefs
